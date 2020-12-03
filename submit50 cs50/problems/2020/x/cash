@@ -1,0 +1,18 @@
+#iclude<stdio.h>
+#iclude<cs50.h>
+#include<math.h>
+int main(void){
+int coins;
+float dolar= get_float("chang owed: \n");
+printf("My cash is %f \n", dolar);
+
+if(dolar<0)
+      printf("please enter a correct number\n");
+else if(dolar==0)
+      printf("you have not any cash money");
+else
+    { coins=round(dolar*100); 
+       printf(coins);
+       }
+return 0;
+}
